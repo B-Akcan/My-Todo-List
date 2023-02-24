@@ -19,7 +19,7 @@ class User(db.Model):
         self.name = name
         self.tasks = tasks
 
-@app.route("/")
+@app.route("/", methods=["POST", "GET"])
 @app.route("/login", methods=["POST", "GET"])
 def login():
     if request.method == "POST":
