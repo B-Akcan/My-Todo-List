@@ -1,0 +1,29 @@
+body {
+  font-family: "Mynerve", cursive;
+}
+body h1 {
+  padding-top: 100px;
+  font-size: 70px;
+  color: turquoise;
+}
+body form {
+  padding-top: 80px;
+}
+body form label {
+  font-size: 20px;
+}
+body form .form-control {
+  text-align: center;
+  width: 250px;
+  margin-left: 80px;
+}
+body form .btn {
+  background-color: turquoise;
+  border-color: turquoise;
+}
+body form .btn:hover {
+  background-color: darkblue;
+  transition: 0.7s;
+}
+
+/*# sourceMappingURL=login.css.map */

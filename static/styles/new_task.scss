@@ -1,0 +1,27 @@
+form
+{
+    padding-top: 180px;
+
+    label
+    {
+        font-size: 50px;
+    }
+
+    .form-control
+    {
+        text-align: center;
+        width: 250px;
+        margin-left: 302px;
+    }
+
+    .btn
+    {
+        background-color: turquoise;
+        border-color: turquoise;
+    }
+    .btn:hover
+    {
+        background-color: darkblue;
+        transition: 0.7s;
+    }
+}

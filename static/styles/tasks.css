@@ -1,0 +1,34 @@
+h1 {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+ol {
+  font-size: 30px;
+}
+ol div p {
+  display: inline-block;
+  overflow-wrap: anywhere;
+  padding-left: 50px;
+}
+ol div form {
+  display: inline;
+}
+ol div form button {
+  float: right;
+  padding-top: 3px;
+  height: 43px;
+  font-size: 15px;
+  background-color: turquoise;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+ol div form button:hover {
+  background-color: darkblue;
+  transition: 0.7s;
+}
+
+/*# sourceMappingURL=tasks.css.map */

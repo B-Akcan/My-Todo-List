@@ -1,0 +1,30 @@
+body
+{
+    height: 100%;
+    font-family: 'Mynerve', cursive;
+
+    .container-fluid
+    {
+        
+        background-color: turquoise;
+        margin-top: -10px;
+        margin-bottom: -10px;
+        height: 60px;
+
+        .nav-link:hover
+        {
+            color: black;
+            font: bold;
+        }
+    }
+
+    #navbarNav
+    {
+        padding-left: 475px;
+    }
+
+    .col
+    {
+        height: 660px;
+    }
+}

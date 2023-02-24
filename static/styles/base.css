@@ -1,0 +1,22 @@
+body {
+  height: 100%;
+  font-family: "Mynerve", cursive;
+}
+body .container-fluid {
+  background-color: turquoise;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  height: 60px;
+}
+body .container-fluid .nav-link:hover {
+  color: black;
+  font: bold;
+}
+body #navbarNav {
+  padding-left: 475px;
+}
+body .col {
+  height: 660px;
+}
+
+/*# sourceMappingURL=base.css.map */
