@@ -6,7 +6,7 @@ app = Flask(__name__)
 app.secret_key = "batuhan"
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///users.sqlite3"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-app.permanent_session_lifetime = timedelta(days=30)
+app.permanent_session_lifetime = timedelta(days=1)
 
 db = SQLAlchemy(app)
 app.app_context().push()
