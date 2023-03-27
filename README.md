@@ -1,5 +1,5 @@
 # My-Todo-List
-Made with Flask.
+Todo list website. Made with Flask.
 <br></br>
 After you download, type "python main.py" in the terminal. Then, copy the IP address and paste it to the search bar in your browser.
 
