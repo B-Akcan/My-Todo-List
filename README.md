@@ -1,8 +1,12 @@
 # My-Todo-List
-Todo list website. Made with Flask.
-<br></br>
+Todo list website. Made with Flask.\
 After you download, type "python main.py" in the terminal. Then, copy the IP address and paste it to the search bar in your browser.
 
+# Requirements
+Flask==3.0.0\
+flask_sqlalchemy==3.1.1
+
+# Screenshots
 ## Register Page
 ![register](https://github.com/B-Akcan/My-Todo-List/assets/108730135/b19b1fb7-f8e1-47db-85de-ededfd530f10)
 
