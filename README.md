@@ -2,7 +2,7 @@
 Todo list website. Made with Flask.\
 After you download, type "python main.py" in the terminal. Then, copy the IP address and paste it to the search bar in your browser.
 
-# Requirements
+# Dependancies
 Flask==3.0.0\
 flask_sqlalchemy==3.1.1
 
