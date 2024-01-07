@@ -1,24 +1,26 @@
 {% extends "base.html" %}
+
 {% block title %}My Todo List - Tasks{% endblock %}
+
 {% block link %}
 <link rel="stylesheet" href="{{ url_for("static", filename="styles/tasks.css") }}">
 {% endblock %}
+
 {% block content %}
-<h1>{{name}}'s Todo List</h1>
-{% if tasks != "" %}
-    <ol>
-        {% with tasks = tasks[1:-1].split("|") %}
-        {% for task in tasks %}
-            <li>
-                <div>
-                    <p>{{ task }}</p>
-                    <form action="{{ url_for("delete_task", task_to_be_deleted=task) }}" method="post">
-                        <button>Delete Task</button>
-                    </form>
-                </div>
-            </li>
-        {% endfor %}
-        {% endwith %}
-    </ol>
+
+{% if tasks %}
+<ol>
+    {% for task in tasks %}
+    <li>
+        <div>
+            <p>{{ task.content }}</p>
+            <form action="{{ url_for("delete_task", task_id=task.id) }}" method="post">
+                <button type="submit" class="btn btn-primary">Delete Task</button>
+            </form>
+        </div>
+    </li>
+    {% endfor %}
+</ol>
 {% endif %}
+
 {% endblock %}

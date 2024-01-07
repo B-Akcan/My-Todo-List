@@ -1,10 +1,10 @@
 {% extends "base.html" %}
-{% block title %}My Todo List - Login{% endblock %}
+{% block title %}My Todo List - Register{% endblock %}
 {% block link %}
 <link rel="stylesheet" href="{{ url_for("static", filename="styles/login.css") }}">
 {% endblock %}
 {% block content %}
-<h1>My Todo List - Login</h1>
+<h1>My Todo List - Register</h1>
 <form action="#", method="post">
     <div class="mb-3">
       <label class="form-label">Username:</label>
@@ -15,5 +15,5 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-<small>Don't have an account? Create one <a href="{{ url_for("register") }}">here.</a></small>
+<small>Already have an account? Login <a href="{{ url_for("login") }}">here.</a></small>
 {% endblock %}

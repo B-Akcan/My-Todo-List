@@ -1,27 +1,33 @@
 form
 {
-    padding-top: 180px;
+    font-family: 'Mynerve', cursive;
+    margin-top: 5%;
 
     label
     {
         font-size: 50px;
+        color: turquoise;
     }
 
     .form-control
     {
         text-align: center;
-        width: 250px;
-        margin-left: 302px;
+        width: 50%;
+        margin-left: 25%;
     }
 
     .btn
     {
         background-color: turquoise;
         border-color: turquoise;
+        border-width: 4px;
     }
+
     .btn:hover
     {
-        background-color: darkblue;
-        transition: 0.7s;
+        background-color: white;
+        border-color: turquoise;
+        color: turquoise;
+        transition: 0.3s;
     }
 }

@@ -2,6 +2,7 @@ body
 {
     height: 100%;
     font-family: 'Mynerve', cursive;
+    margin: auto;
 
     .container-fluid
     {
@@ -20,11 +21,14 @@ body
 
     #navbarNav
     {
-        padding-left: 475px;
+        margin-left: 27%;
     }
 
-    .col
+    .flashes
     {
-        height: 660px;
+        list-style: none;
+        font-size: xx-large;
+        margin-right: 4%;
+        margin-top: 1%;
     }
 }

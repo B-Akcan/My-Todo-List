@@ -2,28 +2,35 @@ body {
   font-family: "Mynerve", cursive;
 }
 body h1 {
-  padding-top: 100px;
+  margin-top: 5%;
   font-size: 70px;
   color: turquoise;
 }
 body form {
-  padding-top: 80px;
+  margin-top: 5%;
 }
 body form label {
   font-size: 20px;
 }
+body form .inp {
+  margin: 1%;
+  width: 50%;
+  border: 2px solid turquoise;
+  padding: 10px;
+}
 body form .form-control {
   text-align: center;
-  width: 250px;
-  margin-left: 80px;
 }
 body form .btn {
   background-color: turquoise;
   border-color: turquoise;
+  border-width: 4px;
 }
 body form .btn:hover {
-  background-color: darkblue;
-  transition: 0.7s;
+  background-color: white;
+  border-color: turquoise;
+  color: turquoise;
+  transition: 0.3s;
 }
 
 /*# sourceMappingURL=login.css.map */

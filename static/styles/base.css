@@ -1,6 +1,7 @@
 body {
   height: 100%;
   font-family: "Mynerve", cursive;
+  margin: auto;
 }
 body .container-fluid {
   background-color: turquoise;
@@ -13,10 +14,13 @@ body .container-fluid .nav-link:hover {
   font: bold;
 }
 body #navbarNav {
-  padding-left: 475px;
+  margin-left: 27%;
 }
-body .col {
-  height: 660px;
+body .flashes {
+  list-style: none;
+  font-size: xx-large;
+  margin-right: 4%;
+  margin-top: 1%;
 }
 
 /*# sourceMappingURL=base.css.map */
