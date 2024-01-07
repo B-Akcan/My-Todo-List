@@ -3,11 +3,15 @@ Todo list website. Made with Flask.
 <br></br>
 After you download, type "python main.py" in the terminal. Then, copy the IP address and paste it to the search bar in your browser.
 
+## Register Page
+![register](https://github.com/B-Akcan/My-Todo-List/assets/108730135/b19b1fb7-f8e1-47db-85de-ededfd530f10)
+
 ## Login Page
-![1](https://user-images.githubusercontent.com/108730135/223698890-1694fbfe-5ff9-4582-a163-2e7ecd700d46.png)
+![login](https://github.com/B-Akcan/My-Todo-List/assets/108730135/505da903-4b42-4641-b345-bb3024a7a51b)
 
 ## New Task Page
-![2](https://user-images.githubusercontent.com/108730135/223698930-b6ceb9d2-e1ce-4bca-ad9e-f06228dff68d.png)
+![newtask](https://github.com/B-Akcan/My-Todo-List/assets/108730135/67074e32-e3bd-46bd-9a59-2de78c271a90)
 
 ## Tasks Page
-![3](https://user-images.githubusercontent.com/108730135/223698963-0a367d62-f460-4947-9fee-b7b74c2380d6.png)
+![tasks](https://github.com/B-Akcan/My-Todo-List/assets/108730135/7785e78e-1e75-4da7-989b-5711b7cd5591)
+
