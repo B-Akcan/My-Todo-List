@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}My Todo List - Delete All Tasks{% endblock %}
+
+{% block link %}
+<link rel="stylesheet" href="{{ url_for("static", filename="styles/delete_all_tasks.css") }}">
+{% endblock %}
+
+{% block content %}
+<form action="#" method="post">
+    <div class="mb-3">
+        <label class="form-label">Are you sure you want to delete all tasks?</label>
+    </div>
+    <input id="yes" type="submit" class="btn btn-primary" name="button" value="Yes">
+    <input id="no" type="submit" class="btn btn-primary" name="button" value="No">
+</form>
+{% endblock %}

@@ -47,6 +47,7 @@ def register():
             try:
                 db.session.add(user)
                 db.session.commit()
+                flash("Account created successfully!")
                 return redirect(url_for("login"))
             except:
                 flash("This username already exists!")
@@ -134,34 +135,50 @@ def delete_task(task_id):
     else:
         return redirect(url_for("login"))
 
-@app.route("/delete_all_tasks")
+@app.route("/delete_all_tasks", methods=["GET", "POST"])
 def delete_all_tasks():
     if "user" in session:
         username = session["user"]
 
-        try:
-            tasks = db.session.execute(db.select(Task).filter_by(user_username=username)).scalars()
+        if request.method == "POST":
+            if request.form["button"] == "Yes":
+                try:
+                    tasks = db.session.execute(db.select(Task).filter_by(user_username=username)).scalars()
 
-            for task in tasks:
-                db.session.delete(task)
-            db.session.commit()
-            
-        finally:
-            return redirect(url_for("tasks"))
+                    for task in tasks:
+                        db.session.delete(task)
+                    db.session.commit()
+
+                finally:
+                    return redirect(url_for("tasks"))
+                
+            elif request.form["button"] == "No":
+                return redirect(url_for("tasks"))
+    
+        return render_template("delete_all_tasks.html")
     
     else:
         return redirect(url_for("login"))
     
-@app.route("/delete_account")
+@app.route("/delete_account", methods=["GET", "POST"])
 def delete_account():
     if "user" in session:
-        username = session["user"]
-        user = db.session.execute(db.select(User).filter_by(username=username)).scalar_one()
-        db.session.delete(user)
-        db.session.commit()
-        session.pop("user", None)
+        if request.method == "POST":
+            if request.form["button"] == "Yes":
+                username = session["user"]
+                user = db.session.execute(db.select(User).filter_by(username=username)).scalar_one()
+                db.session.delete(user)
+                db.session.commit()
+                session.pop("user", None)
+                return redirect(url_for("login"))
 
-    return redirect(url_for("login"))
+            elif request.form["button"] == "No":
+                return redirect(url_for("tasks"))
+            
+        return render_template("delete_account.html")
+
+    else:
+        return redirect(url_for("login"))
 
 
 
